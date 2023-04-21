@@ -1,0 +1,59 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.App {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Diagrammes {
+    height: 100%;
+    flex: 1;
+}
+
+.Sidebar {
+    width: 400px;
+    padding: 1rem;
+    overflow-y: scroll;
+    background-color: #f4f4f4;
+}
+
+.Sidebar h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Sidebar .Components-List {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.Sidebar .Component-Item {
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.Node {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #f4f4f4;
+    transition: border 0.2s ease-in-out;
+}
+.react-flow__node.selected .Node {
+    border: 1px solid black;
+}
